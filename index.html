@@ -1,9 +1,287 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakkapong Pianmee - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 <body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
-</body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Pun Jakkapong</h1>
+            <h2>Software Developer | Problem Solver | Team Player</h2>
+            <p>Discover My Journey in Web Development</p>
+            <!-- Placeholder for astronaut/satellite -->
+            <div class="decorative-element"></div>
+        </div>
+        <!-- Placeholder for animated space background -->
+        <div class="background-animation"></div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="glass-panel">
+            <h3>ABOUT ME</h3>
+            <div class="profile-image">
+                <img src="https://avatars.githubusercontent.com/u/113654151?v=4" alt="Jakkapong Pianmee">
+            </div>
+            <p>My name is Jakkapong "Pun" Pinamee, I'm a web app developer. good team player and enjoy collaborating with others to get projects done according to plan. I'm skilled in various technologies and like building quality products for people to use.</p>
+            <h4>Language</h4>
+            <p>Thai (good)</p>
+            <p>English (Fair)</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="glass-panel">
+            <h3>CONTACT</h3>
+            <p><strong>Telephone:</strong> 087-428-6245</p>
+            <p><strong>Email:</strong> pun.jakkapong@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pun-jakkapong" target="_blank">pun-jakkapong</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/PunJakkapong" target="_blank">PunJakkapong</a></p>
+            <p><strong>Line:</strong> <img src="line qr.png" alt="Line QR Code" class="line-qr" onclick="openQRModal(this.src)"></p>
+            <!-- Optional: Social media links, contact form placeholder -->
+        </div>
+    </section>
+
+    <section id="education" class="content-section">
+        <div class="glass-panel">
+            <h3>EDUCATION & AWARDS</h3>
+            <div class="education-item">
+                <p><strong>Mahasarakham University</strong></p>
+                <p>The Faculty of Informatics</p>
+                <p>Bachelor of Science Degree in Computer Science (2016)</p>
+            </div>
+            <div class="job-divider"></div>
+            <div class="education-item">
+              <p><strong>NSC 2015 the 17th </strong></p>
+                <p>computer software development competition finalists (round 3) - project Scetter Ask</p>
+            </div>
+            <!-- Add more education/award items here -->
+        </div>
+    </section>
+
+    <section id="skills" class="content-section">
+        <div class="glass-panel">
+            <h3>SKILLS</h3>
+            <h4>PROGRAMING</h4>
+            <ul>
+                <li>Golang (Echo, Gin)</li>
+                <li>NodeJs (Express, NestJS)</li>
+                <li>PHP (Laravel, Yii)</li>
+                <li>VueJS</li>
+                <li>NuxtJS</li>
+                <li>.NET</li>
+            </ul>
+            <h4>DATABASE</h4>
+            <ul>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+            </ul>
+            <h4>TOOLS</h4>
+            <ul>
+                <li>Aasana, Jira</li>
+                <li>Docker</li>
+                <li>Bull Queue</li>
+                <li>Redis</li>
+                <li>Facebook API</li>
+                <li>Line API</li>
+            </ul>
+            <!-- Placeholder for tech stack icons -->
+            <div class="tech-icons"></div>
+        </div>
+    </section>
+
+    <section id="experience" class="content-section">
+        <div class="glass-panel">
+            <h3>WORK EXPERIENCE</h3>
+            <div class="job-item">
+                <h4>Software Developer</h4>
+                <p>Sep 2022 - Present | Goship Company Limited</p>
+                
+                <p><strong>Project history</strong></p>
+                <ul>
+                    <li>GoChat - multi-platform social media chat (Facebook, Line OA) with OMS support</li>
+                    <li>GoPDF - a system for exporting PDF documents such as parcel cover sheets, receipts, and more, developed in Go.</li>
+                    <li>GoWMS - a warehouse management system that supports inventory from multiple platforms.</li>
+                </ul>
+                <h4>Stack:</h4>
+                <ul>
+                    <li>Golang</li>
+                    <li>Express</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>VueJS</li>
+                </ul>
+            </div>
+            <div class="job-divider"></div>
+            <div class="job-item">
+                <h4>Software Developer</h4>
+                <p>Mar - Sep 2022 | Soilfish Company Limited</p>
+                
+                <p><strong>Project history</strong></p>
+                <ul>
+                    <li>KTAXA Academy</li>
+                </ul>
+                <h4>Stack:</h4>
+                <ul>
+                    <li>NestJS</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="job-divider"></div>
+            <div class="job-item">
+                <h4>Software Engineer</h4>
+                <p>Jan 2019 - Jan 2022 | Internet Thailand Public Company Limited</p>
+                
+                <p><strong>Project history</strong></p>
+                <ul>
+                    <li>Petty Cash</li>
+                    <li>Ericsson ERP expansion - an expansion of the ERP (logistics) system used within the Ericsson organization.</li>
+                    <li>Online Sales Dashboard</li>
+                </ul>
+                <h4>Stack:</h4>
+                <ul>
+                    <li>Express</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>VueJS</li>
+                </ul>
+            </div>
+            <div class="job-divider"></div>
+            <div class="job-item">
+                <h4>Full Stack Developer</h4>
+                <p>Sep 2017 - Oct 2018 | Green Seeds Company Limited</p>
+            
+                <p><strong>Project history</strong></p>
+                <ul>
+                    <li>VAM - management expenses of vehicles</li>
+                    <li>LAB - system for managing records of the results of seed germination</li>
+                </ul>
+                <h4>Stack:</h4>
+                <ul>
+                    <li>.NET</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <!-- Add more job items here -->
+        </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <div class="glass-panel">
+            <h3>PROJECTS</h3>
+            <div class="projects-grid">
+                <a href="https://gosell.tech/gochat" target="_blank" class="project-card">
+                    <div class="project-card-content">
+                            <h4>GoChat <i class="fa-solid fa-arrow-up-right-from-square click-icon"></i></h4>
+                            <p class="project-description">Multi-platform social media chat system with OMS support, integrating Facebook and Line OA platforms.</p>
+                            <div class="project-stack">
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">VueJS</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Facebook</span>
+                                <span class="tech-tag">Line OA</span>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="https://gosell.tech/document-label" target="_blank" class="project-card">
+                  <div class="project-card-content">
+                        <h4>GoPDF <i class="fa-solid fa-arrow-up-right-from-square click-icon"></i></h4>
+                        <p class="project-description">Advanced PDF document generation system for parcel cover sheets, receipts, and various business documents.</p>
+                        <div class="project-stack">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h4>GoWMS</h4>
+                        <p class="project-description">Comprehensive warehouse management system supporting multi-platform inventory management and tracking.</p>
+                        <div class="project-stack">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">VueJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.axa.co.th/academy" target="_blank" class="project-card">
+                  <div class="project-card-content">
+                        <h4>KTAXA Academy <i class="fa-solid fa-arrow-up-right-from-square click-icon"></i></h4>
+                        <p class="project-description">Educational platform for tax professionals, featuring comprehensive learning materials and assessment tools.</p>
+                        <div class="project-stack">
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional: Audio toggle button -->
+    <div class="audio-toggle"></div>
+
+    <!-- QR Code Modal -->
+    <div class="qr-modal" id="qrModal" onclick="closeQRModal()">
+        <div class="qr-modal-content">
+            <span class="qr-modal-close" onclick="closeQRModal()">&times;</span>
+            <img id="expandedQR" src="" alt="Expanded Line QR Code">
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Placeholder for future JS -->
+    <script>
+        function openQRModal(src) {
+            const modal = document.getElementById('qrModal');
+            const expandedQR = document.getElementById('expandedQR');
+            expandedQR.src = src;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        function closeQRModal() {
+            const modal = document.getElementById('qrModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('qrModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQRModal();
+            }
+        });
+    </script>
+</body>
 </html>
