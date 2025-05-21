@@ -1189,4 +1189,15 @@ body::after {
     .hero-section h2 {
         font-size: 1.1em;
     }
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.info-left, .info-right {
+    padding: 1rem;
 } 
